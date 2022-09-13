@@ -1,38 +1,232 @@
+body{
+    
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    
+    
+    
+    
+    
+}
+.ostalo{
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 10%;
+    padding: 10px;
+    align-content: center;
+}
+
 .gornjideo{
     width: 100%;
     position: center;
     text-align: center;
+    /* font-weight: normal; */
     color: white;
     background-color: pink; 
+    padding: 10px;
+    
+    
+
+}
+
+p, h4, ul{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#ime{
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#role{
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
 .levastrana{
-    margin-right: 50%;
+    /* border: 1px solid black; */
+    margin-right: 10px;
+    /* padding-right: 10%; */
+    text-align: right;
+    
+    
     
 }
 
-#komponenta1{
-    text-align: right;
+.sredina{
+      /* margin: 30px; */
+      position: relative;
+      width: 100px;
+      /* border: 1px solid gainsboro; */
 }
+
+.desnastrana{
+    margin-left: 10px;
+    /* padding-left: 10%; */
+    /* border: 1px solid black; */
+    text-align: left;
+    
+}
+
 
 #italicstyle{
     font-style: italic;
 }
 
-.progress-bar-border{
-    border: 1px solid;
-}
-
-.progress-bar{
-    background-color: pink;
-}
-
 .skills{
-    margin-right: 50%;
+    border: 1px solid;
+    background-color: pink;
+    color: pink;
 }
 
-.skill-progress{
+
+#phone::after{
+    content: "(381) 60 750-2090";
+    font-weight: normal;
+}
+
+#email::after{
+    content: "marija.vrljanac@gmail.com";
+    font-weight: normal;
+}
+
+#linkedin::after{
+    content: "linkedin.com/in/marija-vrljanac/";
+    font-weight: normal;
+}
+
+#java::after{
+    content: "";
+}
+
+#ed::after{
+    content: "Information systems engineer";
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+.wrap{
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+    display: inline-flex;
+    
+}
+
+.wrap::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: gainsboro;
+    top: 35px;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -1px;
+}
+
+img{
+   width: 30%;
+}
+
+#centralna-linija{
+    width: 3px;
+    background-color: gainsboro;
+    height: 100%;
+    position: absolute;
+    left: 49%;
+}
+
+#linija-elementi1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 25px;
+}
+
+hr{
+ 
+        background-color: gainsboro;
+        border: 0 none;
+}
+
+#linija1{
+    /* border: 1px solid gainsboro; */
+    /* position: absolute; */
+    width: 100%;
+    background-color: gainsboro;
+    height: 3px;
+    
+}
+
+
+
+#krug{
+    height: 10px;
+    width: 10px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top:4px;
+    left: 45px;
+}
+
+#linija-elementi2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 163px;
+}
+
+#linija2{
+    /* border: 1px solid gainsboro; */
+    /* position: absolute; */
+    width: 50%;
+    background-color: gainsboro;
+    height: 3px;
+    
+}
+
+#linija-elementi3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 190px;
+}
+
+#linija3{
+    /* border: 1px solid gainsboro; */
+    /* position: absolute; */
+    width: 50%;
+    background-color: gainsboro;
+    height: 3px;
     margin-left: 50%;
+    
 }
 
+#linija-elementi4{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 303px;
+}
+
+#linija-elementi5{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 370px;
+}
+
+#linija-elementi6{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 580px;
+}
+
+#lng::after{
+    content: " ";
+}
