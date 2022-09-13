@@ -28,7 +28,7 @@ body{
 
 }
 
-p, h4, ul{
+p, h4, ul, label{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -41,6 +41,8 @@ p, h4, ul{
     font-weight: normal;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
+
+
 
 .levastrana{
     /* border: 1px solid black; */
@@ -193,7 +195,7 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 190px;
+    top: 220px;
 }
 
 #linija3{
@@ -217,7 +219,7 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 370px;
+    top: 380px;
 }
 
 #linija-elementi6{
@@ -227,6 +229,19 @@ hr{
     top: 580px;
 }
 
+#linija-elementi7{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 560px;
+}
+
 #lng::after{
     content: " ";
+}
+
+.slika img{
+   height: 190px;
+
+
 }
