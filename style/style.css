@@ -262,10 +262,17 @@ hr{
       position: sticky;
       /* margin-right: 25px; */
       z-index: 1;
-      padding-right: 25px;
+      padding-left: 20px;
+      
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .right-side {
+      margin-left: 30px;
+      padding-left: 30px;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .upper-part {
