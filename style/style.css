@@ -1,0 +1,291 @@
+body{
+    
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    /* max-width: 100%; */
+    
+    
+}
+
+
+progress::-webkit-progress-bar {background-color: gainsboro; width: 100%;}
+progress {background-color: gainsboro;}
+
+progress::-webkit-progress-value {background-color: pink !important;}
+progress::-moz-progress-bar {background-color: pink !important;}
+progress {color: pink;}
+
+.content{
+    /* width: 70%; */
+    margin: 0 auto;
+}
+
+
+
+.upper-part{
+
+text-align: center;
+
+/* font-weight: normal; */
+
+color: white;
+
+background-color: pink;
+
+padding: 10px;
+
+justify-content: center;
+
+/* max-width: 100%; */
+
+/* position: relative; */
+}
+
+p, h4, ul, label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#name{
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#role{
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+
+
+.left-side{
+    /* border: 1px solid black; */
+    /* margin-right: 10%; */
+    padding-right: 10px;
+    text-align: right;
+    /* margin-right: 10px; */
+    /* width: 50%; */
+}
+
+
+
+.right-side{
+    /* margin-left: 10%; */
+    padding-left: 10px;
+    /* border: 1px solid black; */
+    text-align: left;
+    /* width: 50%; */
+}
+
+
+#italicstyle{
+    font-style: italic;
+}
+
+.skills{
+    border: 1px solid;
+    background-color: pink;
+    color: pink;
+}
+
+
+#phone::after{
+    content: "+(381) 60 750-2090";
+    font-weight: normal;
+}
+
+#email::after{
+    content: "marija.vrljanac@gmail.com";
+    font-weight: normal;
+}
+
+#linkedin::after{
+    content: "linkedin.com/in/marija-vrljanac/";
+    font-weight: normal;
+}
+
+#java::after{
+    content: "";
+}
+
+#ed::after{
+    content: "Information systems engineer";
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+.wrap{
+    position: absolute;
+    width: 100%;
+    /* max-width: 1140px; */
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrap::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: gainsboro;
+    top: 35px;
+    bottom: 35px;
+    left: 50%;
+    margin-left: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+#line-elements1{
+    position: absolute;
+    /* height: 100px; */
+    width: 100px;
+    top: 5%;
+}
+
+hr{
+    background-color: gainsboro;
+    border: 0 none;
+}
+
+#line1{
+    /* border: 1px solid gainsboro; */
+    position: absolute;
+    width: 100%;
+    background-color: gainsboro;
+    height: 3px;
+    
+}
+
+
+
+#circle{
+    height: 10px;
+    width: 10px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top:4px;
+    left: 45px;
+    z-index: 1;
+}
+
+
+#line-elements2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 25%;
+}
+
+#line2{
+    /* border: 1px solid gainsboro; */
+    position: sticky;
+    width: 50%;
+    background-color: gainsboro;
+    height: 3px;
+}
+
+#line-elements3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 31%;
+}
+
+#line3{
+    /* border: 1px solid gainsboro; */
+    /* position: absolute; */
+    width: 50%;
+    background-color: gainsboro;
+    height: 3px;
+    margin-left: 50%;
+    
+}
+
+#line-elements4{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 45%;
+}
+
+#line-elements5{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 55%;
+}
+
+#line-elements6{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 84%;
+}
+
+#line-elements7{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 80%;
+}
+
+#lng::after{
+    content: " ";
+}
+
+.image1 img{
+    /* max-width: 100%; */
+    height: 165px;
+    width: auto;
+    padding-top: 3%;
+}
+
+.middle-part{
+    /* margin: 30px; */
+    /* position: absolute; */
+    width: 100px;
+    /* border: 1px solid gainsboro; */
+}
+
+@media only screen and (max-width: 1200px) {
+    .left-side, .right-side {
+      width: 100%; 
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .middle-part {
+      position: sticky;
+      /* margin-right: 25px; */
+      z-index: 1;
+      padding-left: 20px;
+      
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .right-side {
+      margin-left: 30px;
+      padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .upper-part {
+      width: 100%; 
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .upper-part {
+      width: 100%; 
+    }
+}
+
+
+
+
