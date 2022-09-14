@@ -137,26 +137,16 @@ p, h4, ul, label{
     justify-content: center;
 }
 
-
-#centralna-linija{
-    width: 3px;
-    background-color: gainsboro;
-    height: 100%;
-    position: absolute;
-    left: 49%;
-}
-
 #line-elements1{
     position: absolute;
     /* height: 100px; */
     width: 100px;
-    top: 50px;
+    top: 5%;
 }
 
 hr{
- 
-        background-color: gainsboro;
-        border: 0 none;
+    background-color: gainsboro;
+    border: 0 none;
 }
 
 #line1{
@@ -187,7 +177,7 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 180px;
+    top: 25%;
 }
 
 #line2{
@@ -202,7 +192,7 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 210px;
+    top: 31%;
 }
 
 #line3{
@@ -219,28 +209,28 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 320px;
+    top: 45%;
 }
 
 #line-elements5{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 375px;
+    top: 55%;
 }
 
 #line-elements6{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 595px;
+    top: 84%;
 }
 
 #line-elements7{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 555px;
+    top: 80%;
 }
 
 #lng::after{
@@ -264,6 +254,15 @@ hr{
 @media only screen and (max-width: 1200px) {
     .left-side, .right-side {
       width: 100%; 
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .middle-part {
+      position: sticky;
+      /* margin-right: 25px; */
+      z-index: 1;
+      padding-right: 25px;
     }
 }
 
