@@ -3,12 +3,28 @@ body{
     /* max-width: 100%; */
 }
 
-progress::-webkit-progress-bar {background-color: gainsboro; width: 100%;}
-progress {background-color: gainsboro;}
+progress::-webkit-progress-bar {
+    background-color: gainsboro; 
+    position: relative;
+}
 
-progress::-webkit-progress-value {background-color: pink !important;}
-progress::-moz-progress-bar {background-color: pink !important;}
-progress {color: pink;}
+progress{
+    background-color: gainsboro; 
+}
+
+progress::-webkit-progress-value{
+    background-color: pink !important; 
+}
+
+progress::-moz-progress-bar{
+    background-color: pink !important; 
+}
+
+progress {
+    color: pink; 
+    height: 8px;
+    margin: 6px;
+}
 
 .content{
     /* width: 70%; */
@@ -22,7 +38,7 @@ progress {color: pink;}
     background-color: pink;
     padding: 10px;
     justify-content: center;
-    /* max-width: 100%; */
+    width: 100%;
     /* position: relative; */
 }
 
@@ -41,20 +57,14 @@ p, h4, ul, label{
 }
 
 .left-side{
-    /* border: 1px solid black; */
-    /* margin-right: 10%; */
     padding-right: 10px;
     text-align: right;
-    /* margin-right: 10px; */
-    /* width: 50%; */
+
 }
 
 .right-side{
-    /* margin-left: 10%; */
     padding-left: 10px;
-    /* border: 1px solid black; */
     text-align: left;
-    /* width: 50%; */
 }
 
 #italicstyle{
@@ -106,14 +116,15 @@ p, h4, ul, label{
 .wrap::after{
     content: '';
     position: absolute;
-    width: 2px;
+    width: 3px;
     background: gainsboro;
     top: 35px;
     bottom: 35px;
     left: 50%;
-    margin-left: 13px;
-    display: flex;
-    justify-content: center;
+    margin-left: 22px;
+    display: flex;   
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 #line-elements1{
@@ -153,7 +164,7 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 25%;
+    top: 23%;
 }
 
 #line2{
@@ -168,7 +179,7 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 31%;
+    top: 29%;
 }
 
 #line3{
@@ -185,28 +196,28 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 45%;
+    top: 41%;
 }
 
 #line-elements5{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 55%;
+    top: 50%;
 }
 
 #line-elements6{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 84%;
+    top: 78.5%;
 }
 
 #line-elements7{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 80%;
+    top: 78.5%;
 }
 
 #lng::after{
@@ -221,45 +232,153 @@ hr{
 }
 
 .middle-part{
-    /* margin: 30px; */
-    /* position: absolute; */
-    width: 100px;
-    /* border: 1px solid gainsboro; */
+    min-width: 100px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .left-side, .right-side {
-      width: 100%; 
-    }
+ul{
+    padding: 0.13px;   
 }
 
-@media only screen and (max-width: 1200px) {
+li{
+    margin: 10px;
+}
+
+@media (max-width: 1200px) {    
     .middle-part {
-      position: sticky;
-      /* margin-right: 25px; */
-      z-index: 1;
-      padding-left: 20px;     
-    }
+        z-index: 1;
+      }
+      .wrap{
+        width: 95%;
+      }
 }
 
-@media only screen and (max-width: 1200px) {
-    .right-side {
-      margin-left: 30px;
-      padding-left: 30px;
-    }
+@media (max-width: 1000px) {   
+    .middle-part {
+        padding-left: 10px;
+      }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 550px) {
     .upper-part {
       width: 100%; 
     }
-}
 
-@media only screen and (max-width: 450px) {
-    .upper-part {
-      width: 100%; 
+    .wrap{
+        width: 90%;
     }
 }
+
+
+@media screen and (max-width: 800px){
+    .middle-part{
+        display: none;
+    }
+    .wrap::after{
+        display: none;
+    }
+    .wrap{
+        flex-direction: column;
+    }
+    .right-side, .left-side{
+        text-align: justify;
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1056px) and (max-width: 1132px) {
+    #line-elements2{
+        top: 200px;
+    }
+    #line-elements3{
+        top: 220px;
+    }
+    #line-elements4{
+        top: 340px;
+    }
+    #line-elements5{
+        top: 385px;
+    }
+    #line-elements6{
+        top: 630px;
+    }
+    #line-elements7{
+        top: 628px;
+    }
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1056px) {
+    #line-elements2{
+        top: 215px;
+    }
+    #line-elements3{
+        top: 220px
+    }
+    #line-elements4{
+        top: 355px;
+    }
+    #line-elements5{
+        top: 385px;
+    }
+    #line-elements6{
+        top: 650px;
+    }
+    #line-elements7{
+        top: 670px;
+    }
+}
+
+@media only screen and (min-width: 830px) and (max-width: 970px) {
+    #line-elements2{
+        top: 235px;
+    }
+    #line-elements3{
+        top: 220px
+    }
+    #line-elements4{
+        top: 373px;
+    }
+    #line-elements5{
+        top: 385px;
+    }
+    #line-elements6{
+        top: 670px;
+    }
+    #line-elements7{
+        top: 670px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 830px) {
+    #line-elements2{
+        top: 250px;
+    }
+    #line-elements3{
+        top: 220px
+    }
+    #line-elements4{
+        top: 389px;
+    }
+    #line-elements5{
+        top: 400px;
+    }
+    #line-elements6{
+        top: 705px;
+    }
+    #line-elements7{
+        top: 685px;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    .upper-part {
+      width: 200%; 
+    }
+}
+
 
 
 
