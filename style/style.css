@@ -247,6 +247,9 @@ li{
     .middle-part {
         z-index: 1;
       }
+      .wrap{
+        width: 95%;
+      }
 }
 
 @media (max-width: 1000px) {   
@@ -255,14 +258,18 @@ li{
       }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
     .upper-part {
       width: 100%; 
+    }
+
+    .wrap{
+        width: 90%;
     }
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .middle-part{
         display: none;
     }
