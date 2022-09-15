@@ -3,12 +3,28 @@ body{
     /* max-width: 100%; */
 }
 
-progress::-webkit-progress-bar {background-color: gainsboro; width: 100%;}
-progress {background-color: gainsboro;}
+progress::-webkit-progress-bar {
+    background-color: gainsboro; 
+    position: relative;
+}
 
-progress::-webkit-progress-value {background-color: pink !important;}
-progress::-moz-progress-bar {background-color: pink !important;}
-progress {color: pink;}
+progress{
+    background-color: gainsboro; 
+}
+
+progress::-webkit-progress-value{
+    background-color: pink !important; 
+}
+
+progress::-moz-progress-bar{
+    background-color: pink !important; 
+}
+
+progress {
+    color: pink; 
+    height: 8px;
+    margin: 6px;
+}
 
 .content{
     /* width: 70%; */
@@ -41,20 +57,14 @@ p, h4, ul, label{
 }
 
 .left-side{
-    /* border: 1px solid black; */
-    /* margin-right: 10%; */
     padding-right: 10px;
     text-align: right;
-    /* margin-right: 10px; */
-    /* width: 50%; */
+
 }
 
 .right-side{
-    /* margin-left: 10%; */
     padding-left: 10px;
-    /* border: 1px solid black; */
     text-align: left;
-    /* width: 50%; */
 }
 
 #italicstyle{
@@ -106,12 +116,12 @@ p, h4, ul, label{
 .wrap::after{
     content: '';
     position: absolute;
-    width: 2px;
+    width: 3px;
     background: gainsboro;
     top: 35px;
     bottom: 35px;
     left: 50%;
-    margin-left: 13px;
+    margin-left: 22px;
     display: flex;   
     flex-wrap: wrap;
     align-content: center;
@@ -154,7 +164,7 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 25%;
+    top: 23%;
 }
 
 #line2{
@@ -169,7 +179,7 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 31%;
+    top: 29%;
 }
 
 #line3{
@@ -186,28 +196,28 @@ hr{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 45%;
+    top: 41%;
 }
 
 #line-elements5{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 55%;
+    top: 50%;
 }
 
 #line-elements6{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 84%;
+    top: 77%;
 }
 
 #line-elements7{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 80%;
+    top: 78.5%;
 }
 
 #lng::after{
@@ -224,36 +234,30 @@ hr{
 .middle-part{
     /* margin: 30px; */
     /* position: absolute; */
-    width: 100px;
+    min-width: 100px;
     /* border: 1px solid gainsboro; */
 }
 
-@media only screen and (max-width: 1200px) {
-    .left-side, .right-side {
-      width: 100%; 
-    }
+ul{
+    padding: 0.13px;   
 }
 
-@media only screen and (max-width: 1200px) {
+li{
+    margin: 10px;
+}
+
+@media (max-width: 1200px) {
+    
     .middle-part {
-      position: sticky;
-      /* margin-right: 25px; */
-      z-index: 1;
-      padding-left: 20px;          
-    }
+        z-index: 1;
+      }
 }
 
-@media only screen and (max-width: 1200px) {
-    .right-side {
-      margin-left: 30px;
-      padding-left: 30px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .upper-part {
-      width: 100%; 
-    }
+@media (max-width: 1000px) {
+    
+    .middle-part {
+        padding-left: 10px;
+      }
 }
 
 @media only screen and (max-width: 450px) {
@@ -261,6 +265,40 @@ hr{
       width: 100%; 
     }
 }
+
+
+@media screen and (max-width: 700px){
+    .middle-part{
+        display: none;
+    }
+    .wrap::after{
+        display: none;
+    }
+    .wrap{
+        flex-direction: column;
+    }
+    .right-side, .left-side{
+        text-align: justify;
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #line-elements2{
+        top: inherit + 2%;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    .upper-part {
+      width: 200%; 
+    }
+}
+
 
 
 
