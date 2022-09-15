@@ -1,11 +1,7 @@
-body{
-    
+body{ 
     font-family: Georgia, Times, 'Times New Roman', serif;
     /* max-width: 100%; */
-    
-    
 }
-
 
 progress::-webkit-progress-bar {background-color: gainsboro; width: 100%;}
 progress {background-color: gainsboro;}
@@ -19,25 +15,15 @@ progress {color: pink;}
     margin: 0 auto;
 }
 
-
-
 .upper-part{
-
-text-align: center;
-
-/* font-weight: normal; */
-
-color: white;
-
-background-color: pink;
-
-padding: 10px;
-
-justify-content: center;
-
-/* max-width: 100%; */
-
-/* position: relative; */
+    text-align: center;
+    /* font-weight: normal; */
+    color: white;
+    background-color: pink;
+    padding: 10px;
+    justify-content: center;
+    /* max-width: 100%; */
+    /* position: relative; */
 }
 
 p, h4, ul, label{
@@ -54,8 +40,6 @@ p, h4, ul, label{
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-
-
 .left-side{
     /* border: 1px solid black; */
     /* margin-right: 10%; */
@@ -65,8 +49,6 @@ p, h4, ul, label{
     /* width: 50%; */
 }
 
-
-
 .right-side{
     /* margin-left: 10%; */
     padding-left: 10px;
@@ -74,7 +56,6 @@ p, h4, ul, label{
     text-align: left;
     /* width: 50%; */
 }
-
 
 #italicstyle{
     font-style: italic;
@@ -85,7 +66,6 @@ p, h4, ul, label{
     background-color: pink;
     color: pink;
 }
-
 
 #phone::after{
     content: "+(381) 60 750-2090";
@@ -111,7 +91,6 @@ p, h4, ul, label{
     font-style: italic;
     font-weight: normal;
 }
-
 
 .wrap{
     position: absolute;
@@ -158,8 +137,6 @@ hr{
     
 }
 
-
-
 #circle{
     height: 10px;
     width: 10px;
@@ -171,7 +148,6 @@ hr{
     left: 45px;
     z-index: 1;
 }
-
 
 #line-elements2{
     position: absolute;
@@ -262,8 +238,7 @@ hr{
       position: sticky;
       /* margin-right: 25px; */
       z-index: 1;
-      padding-left: 20px;
-      
+      padding-left: 20px;     
     }
 }
 
