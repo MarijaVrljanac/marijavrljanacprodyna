@@ -46,9 +46,15 @@ p, h4, ul, label{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+label{
+    width: 26%;
+}
+
+
 #name{
     font-weight: normal;
     letter-spacing: 2px;
+    font-size: xx-large;
 }
 
 #role{
@@ -71,10 +77,11 @@ p, h4, ul, label{
     font-style: italic;
 }
 
-.skills{
-    border: 1px solid;
-    background-color: pink;
-    color: pink;
+.relevant-skills{
+    /* display: flex;
+    flex-direction: column; */
+    text-overflow: ellipsis;
+    
 }
 
 #phone::after{
@@ -269,7 +276,7 @@ li{
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 816px){
     .middle-part{
         display: none;
     }
@@ -278,14 +285,30 @@ li{
     }
     .wrap{
         flex-direction: column;
+        align-items: center;
     }
+
     .right-side, .left-side{
         text-align: justify;
         margin: 0;
         padding: 0;
     }
+
+    ul{
+        padding-left: 47px;
+    }
+
     img{
         display: none;
+    }
+
+    .progress-bar-div{
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-around;
+        align-items: center;   
+        /* column-gap: 10px; */
     }
 }
 
@@ -501,9 +524,18 @@ li{
     }
 }
 
+@media screen and (max-width: 350px){
+    progress{
+        width: 35%;
+    }
+}
+
 @media only screen and (max-width: 200px) {
     .upper-part {
       width: 200%; 
+    }
+    .wrap{
+        text-overflow: ellipsis;
     }
 }
 
